@@ -1253,137 +1253,129 @@
   </div>
 
   <!-- MODAL INTERACTIVO DE AGENDAMIENTO (#modal-agendamiento) -->
-  <div id="modal-agendamiento" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-brand-navy/60 backdrop-blur-sm overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div id="modal-agendamiento" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-4 bg-brand-navy/60 backdrop-blur-sm overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     
-    <!-- Modal Dialog Box -->
-    <div id="modalBox" class="bg-white w-full max-w-lg rounded-3xl shadow-2xl border border-brand-sageBorder overflow-hidden transform scale-95 opacity-0 transition-all duration-300 my-8">
+    <!-- Modal Dialog Box (Diseño Compacto Anti-Scroll para 100% de Pantallas) -->
+    <div id="modalBox" class="bg-white w-full max-w-xl rounded-2xl sm:rounded-3xl shadow-2xl border border-brand-sageBorder overflow-hidden transform scale-95 opacity-0 transition-all duration-300 my-auto">
       
-      <!-- Modal Header -->
-      <div class="bg-gradient-to-r from-brand-navy to-brand-navyLight px-6 sm:px-8 py-5 text-white flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-gold">
-            <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+      <!-- Modal Header Compacto -->
+      <div class="bg-gradient-to-r from-brand-navy to-brand-navyLight px-5 py-3 sm:py-3.5 text-white flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-brand-gold flex-shrink-0">
+            <i data-lucide="calendar-plus" class="w-4 h-4"></i>
           </div>
           <div>
-            <h3 id="modalTitle" class="text-lg font-serif font-bold text-white">Separar Cita de Consulta</h3>
-            <p class="text-xs text-white/70">Tu bienestar emocional es una prioridad &bull; Espacio seguro y confidencial</p>
+            <h3 id="modalTitle" class="text-base sm:text-lg font-serif font-bold text-white leading-tight">Separar Cita de Consulta</h3>
+            <p class="text-[11px] text-white/75 leading-none">Espacio confidencial &bull; Dra. Cindy Gisella Méndez</p>
           </div>
         </div>
-        <button onclick="closeBookingModal()" aria-label="Cerrar modal" class="p-2 rounded-xl text-white/70 hover:text-white hover:bg-white/10 transition">
-          <i data-lucide="x" class="w-5 h-5"></i>
+        <button onclick="closeBookingModal()" aria-label="Cerrar modal" class="p-1.5 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
         </button>
       </div>
 
       <!-- Modal Body (Form & Success Views) -->
-      <div class="p-6 sm:p-8 space-y-5">
+      <div class="p-4 sm:p-5">
         
         <!-- Form Container -->
-        <div id="modalFormContainer" class="space-y-4">
-          <!-- Info Banner inside modal -->
-          <div class="p-3.5 rounded-2xl bg-brand-sage/50 border border-brand-sageBorder flex items-start gap-3 text-xs text-brand-navy">
-            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
-            <div>
-              <strong>Atención personalizada:</strong> Al enviar tu solicitud se generará un código único de seguimiento y te derivaremos a WhatsApp oficial para coordinar fecha y hora.
-            </div>
-          </div>
-
-          <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4" novalidate>
+        <div id="modalFormContainer">
+          <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-3" novalidate>
             
-            <!-- Campo 1: Nombre completo -->
-            <div>
-              <label for="fullName" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
-                Nombre Completo <span class="text-rose-500">*</span>
-              </label>
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-brand-textMuted">
-                  <i data-lucide="user" class="w-4 h-4"></i>
-                </div>
-                <input type="text" id="fullName" name="fullName" required placeholder="Ej. Mariana López Gómez" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition">
-              </div>
-              <p id="nameError" class="hidden text-xs text-rose-500 mt-1">Por favor escribe tu nombre completo (mínimo 3 caracteres).</p>
-            </div>
-
-            <!-- Campo 2: Teléfono / WhatsApp -->
-            <div>
-              <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
-                Teléfono / WhatsApp <span class="text-rose-500">*</span>
-              </label>
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-brand-textMuted">
-                  <i data-lucide="phone" class="w-4 h-4"></i>
-                </div>
-                <input type="tel" id="phone" name="phone" required placeholder="Ej. 301 234 5678" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition">
-              </div>
-              <p id="phoneError" class="hidden text-xs text-rose-500 mt-1">Ingresa un número telefónico válido (10 dígitos en Colombia).</p>
-            </div>
-
-            <!-- Campo 3: Servicio de Interés -->
-            <div>
-              <label for="serviceSelect" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
-                Servicio de Interés <span class="text-rose-500">*</span>
-              </label>
-              <div class="relative">
-                <select id="serviceSelect" name="serviceSelect" required class="w-full pl-3.5 pr-10 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition bg-white appearance-none">
-                  <option value="" disabled selected>Selecciona una opción...</option>
-                  <option value="Psicoterapia Individual">Psicoterapia Individual</option>
-                  <option value="Psicoterapia Familiar">Psicoterapia Familiar</option>
-                  <option value="Club de Mamás">Club de Mamás</option>
-                  <option value="Reclutamiento para Pymes">Reclutamiento para Pymes</option>
-                  <option value="Charlas y Capacitaciones">Charlas y Capacitaciones</option>
-                  <option value="Exploración Vocacional">Exploración Vocacional</option>
-                  <option value="Orientación Psicológica">Orientación Psicológica</option>
-                </select>
-                <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-brand-textMuted">
-                  <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                </div>
-              </div>
-              <p id="serviceError" class="hidden text-xs text-rose-500 mt-1">Por favor selecciona un servicio de interés.</p>
-            </div>
-
-            <!-- Campo 4: Modalidad Preferida -->
-            <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
-                Modalidad Preferida <span class="text-rose-500">*</span>
-              </label>
-              <div class="grid grid-cols-2 gap-3">
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 cursor-pointer hover:bg-brand-sage/30 transition has-[:checked]:border-brand-navy has-[:checked]:bg-brand-sage/50">
-                  <input type="radio" name="modalidad" value="Presencial en Montería" checked class="text-brand-navy focus:ring-brand-navy">
-                  <div class="text-xs">
-                    <span class="font-bold text-brand-navy block">Presencial</span>
-                    <span class="text-brand-textMuted text-[11px]">Montería, Córdoba</span>
-                  </div>
+            <!-- Fila 1: Nombre & Teléfono (2 columnas en escritorio/laptop) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- Campo 1: Nombre completo -->
+              <div>
+                <label for="fullName" class="block text-[11px] font-bold uppercase tracking-wider text-brand-navy mb-1">
+                  Nombre Completo <span class="text-rose-500">*</span>
                 </label>
-
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 cursor-pointer hover:bg-brand-sage/30 transition has-[:checked]:border-brand-navy has-[:checked]:bg-brand-sage/50">
-                  <input type="radio" name="modalidad" value="Virtual Nacional" class="text-brand-navy focus:ring-brand-navy">
-                  <div class="text-xs">
-                    <span class="font-bold text-brand-navy block">Virtual</span>
-                    <span class="text-brand-textMuted text-[11px]">Videollamada Nacional</span>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-brand-textMuted">
+                    <i data-lucide="user" class="w-3.5 h-3.5"></i>
                   </div>
+                  <input type="text" id="fullName" name="fullName" required placeholder="Mariana López" class="w-full pl-9 pr-3 py-2 rounded-lg border border-gray-300 text-xs sm:text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition">
+                </div>
+                <p id="nameError" class="hidden text-[10px] text-rose-500 mt-0.5">Nombre requerido (mín. 3 caracteres).</p>
+              </div>
+
+              <!-- Campo 2: Teléfono / WhatsApp -->
+              <div>
+                <label for="phone" class="block text-[11px] font-bold uppercase tracking-wider text-brand-navy mb-1">
+                  Teléfono / WhatsApp <span class="text-rose-500">*</span>
                 </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-brand-textMuted">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <input type="tel" id="phone" name="phone" required placeholder="301 234 5678" class="w-full pl-9 pr-3 py-2 rounded-lg border border-gray-300 text-xs sm:text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition">
+                </div>
+                <p id="phoneError" class="hidden text-[10px] text-rose-500 mt-0.5">Número válido (10 dígitos en Colombia).</p>
+              </div>
+            </div>
+
+            <!-- Fila 2: Servicio & Modalidad (2 columnas en escritorio/laptop) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- Campo 3: Servicio de Interés -->
+              <div>
+                <label for="serviceSelect" class="block text-[11px] font-bold uppercase tracking-wider text-brand-navy mb-1">
+                  Servicio de Interés <span class="text-rose-500">*</span>
+                </label>
+                <div class="relative">
+                  <select id="serviceSelect" name="serviceSelect" required class="w-full pl-3 pr-8 py-2 rounded-lg border border-gray-300 text-xs sm:text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition bg-white appearance-none">
+                    <option value="" disabled selected>Selecciona una opción...</option>
+                    <option value="Psicoterapia Individual">Psicoterapia Individual</option>
+                    <option value="Psicoterapia Familiar">Psicoterapia Familiar</option>
+                    <option value="Club de Mamás">Club de Mamás</option>
+                    <option value="Reclutamiento para Pymes">Reclutamiento para Pymes</option>
+                    <option value="Charlas y Capacitaciones">Charlas y Capacitaciones</option>
+                    <option value="Exploración Vocacional">Exploración Vocacional</option>
+                    <option value="Orientación Psicológica">Orientación Psicológica</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none text-brand-textMuted">
+                    <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+                  </div>
+                </div>
+                <p id="serviceError" class="hidden text-[10px] text-rose-500 mt-0.5">Por favor selecciona un servicio.</p>
+              </div>
+
+              <!-- Campo 4: Modalidad Preferida -->
+              <div>
+                <label class="block text-[11px] font-bold uppercase tracking-wider text-brand-navy mb-1">
+                  Modalidad <span class="text-rose-500">*</span>
+                </label>
+                <div class="grid grid-cols-2 gap-2">
+                  <label class="flex items-center gap-1.5 p-2 rounded-lg border border-gray-200 cursor-pointer hover:bg-brand-sage/30 transition has-[:checked]:border-brand-navy has-[:checked]:bg-brand-sage/50">
+                    <input type="radio" name="modalidad" value="Presencial en Montería" checked class="w-3.5 h-3.5 text-brand-navy focus:ring-brand-navy">
+                    <span class="text-xs font-semibold text-brand-navy leading-none">Presencial</span>
+                  </label>
+
+                  <label class="flex items-center gap-1.5 p-2 rounded-lg border border-gray-200 cursor-pointer hover:bg-brand-sage/30 transition has-[:checked]:border-brand-navy has-[:checked]:bg-brand-sage/50">
+                    <input type="radio" name="modalidad" value="Virtual Nacional" class="w-3.5 h-3.5 text-brand-navy focus:ring-brand-navy">
+                    <span class="text-xs font-semibold text-brand-navy leading-none">Virtual</span>
+                  </label>
+                </div>
               </div>
             </div>
 
             <!-- Campo 5 (Legal): Consentimiento de Datos Ley 1581 -->
-            <div class="pt-1">
-              <label class="flex items-start gap-2.5 cursor-pointer">
-                <input type="checkbox" id="legalConsent" name="legalConsent" required class="mt-1 w-4 h-4 text-brand-navy rounded border-gray-300 focus:ring-brand-navy">
-                <span class="text-xs text-brand-textMuted leading-relaxed select-none">
+            <div class="pt-0.5">
+              <label class="flex items-start gap-2 cursor-pointer">
+                <input type="checkbox" id="legalConsent" name="legalConsent" required class="mt-0.5 w-3.5 h-3.5 text-brand-navy rounded border-gray-300 focus:ring-brand-navy">
+                <span class="text-[11px] text-brand-textMuted leading-tight select-none">
                   Acepto el tratamiento de mis datos personales de acuerdo con la <strong class="text-brand-navy font-semibold">Ley 1581 de 2012</strong> exclusivamente para la gestión de esta consulta. <span class="text-rose-500">*</span>
                 </span>
               </label>
-              <p id="consentError" class="hidden text-xs text-rose-500 mt-1">Debes aceptar el tratamiento de datos para continuar.</p>
+              <p id="consentError" class="hidden text-[10px] text-rose-500 mt-0.5">Debes aceptar el tratamiento de datos para continuar.</p>
             </div>
 
             <!-- Submit Button con Spinner -->
-            <div class="pt-2">
-              <button type="submit" id="submitBookingBtn" class="w-full py-4 rounded-xl bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-bold text-sm shadow-card flex items-center justify-center gap-2 transition-all disabled:opacity-75 disabled:cursor-not-allowed">
+            <div class="pt-1">
+              <button type="submit" id="submitBookingBtn" class="w-full py-3 rounded-xl bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-bold text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 transition-all disabled:opacity-75 disabled:cursor-not-allowed cursor-pointer">
                 <svg id="btnSpinner" class="hidden animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
                 <span id="btnText">Confirmar y Continuar a WhatsApp</span>
-                <i data-lucide="send" id="btnIcon" class="w-4 h-4 text-brand-gold"></i>
+                <i data-lucide="send" id="btnIcon" class="w-3.5 h-3.5 text-brand-gold"></i>
               </button>
             </div>
 
@@ -1391,35 +1383,35 @@
         </div>
 
         <!-- Success Container inside Modal (shown after booking) -->
-        <div id="modalSuccessContainer" class="hidden text-center space-y-5 py-2">
+        <div id="modalSuccessContainer" class="hidden text-center space-y-3 py-1">
           <!-- Icono verde de confirmación -->
-          <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-md">
-            <i data-lucide="check-circle" class="w-9 h-9"></i>
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-sm">
+            <i data-lucide="check-circle" class="w-7 h-7"></i>
           </div>
 
-          <div class="space-y-2">
-            <h3 class="text-2xl font-serif font-bold text-brand-navy">¡Solicitud registrada con éxito!</h3>
-            <p class="text-sm text-brand-navy font-semibold">
-              Tu código es: <span id="successRefCode" class="font-mono bg-brand-goldLight text-brand-navy px-2.5 py-1 rounded-lg border border-brand-gold/40">REF-PSI-000000-000</span>
+          <div class="space-y-1">
+            <h3 class="text-xl font-serif font-bold text-brand-navy">¡Solicitud registrada con éxito!</h3>
+            <p class="text-xs text-brand-navy font-semibold">
+              Tu código es: <span id="successRefCode" class="font-mono bg-brand-goldLight text-brand-navy px-2 py-0.5 rounded border border-brand-gold/40">REF-PSI-000000-000</span>
             </p>
-            <p class="text-xs text-brand-textMuted leading-relaxed max-w-md mx-auto pt-1">
-              Para asegurar tu espacio en la agenda, puedes transferir a la cuenta Nequi <strong class="text-brand-navy">301 801 5912</strong> y adjuntar tu comprobante por el chat de WhatsApp que acabamos de abrir.
+            <p class="text-[11px] text-brand-textMuted leading-relaxed max-w-sm mx-auto pt-0.5">
+              Para asegurar tu espacio, transfiere a Nequi <strong class="text-brand-navy">301 801 5912</strong> y adjunta tu comprobante por el chat de WhatsApp que acabamos de abrir.
             </p>
           </div>
 
           <!-- Actions & Backup Link -->
-          <div class="space-y-3 pt-3 max-w-md mx-auto">
-            <button onclick="copyNequiNumber()" class="w-full py-3 rounded-xl bg-brand-goldLight border border-brand-gold text-brand-navy text-xs font-bold hover:bg-brand-gold hover:text-white transition-all flex items-center justify-center gap-2 shadow-xs">
-              <i data-lucide="copy" class="w-4 h-4 text-brand-goldHover"></i>
+          <div class="space-y-2 pt-2 max-w-sm mx-auto">
+            <button onclick="copyNequiNumber()" class="w-full py-2.5 rounded-lg bg-brand-goldLight border border-brand-gold text-brand-navy text-xs font-bold hover:bg-brand-gold hover:text-white transition-all flex items-center justify-center gap-1.5 shadow-xs cursor-pointer">
+              <i data-lucide="copy" class="w-3.5 h-3.5 text-brand-goldHover"></i>
               <span>Copiar número Nequi (301 801 5912)</span>
             </button>
             
-            <a id="successWhatsAppLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs sm:text-sm font-bold shadow-md transition-all flex items-center justify-center gap-2">
-              <i data-lucide="message-circle" class="w-4 h-4"></i>
-              <span>Si WhatsApp no abrió automáticamente, haz clic aquí para enviar el mensaje.</span>
+            <a id="successWhatsAppLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs font-bold shadow-sm transition-all flex items-center justify-center gap-1.5">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+              <span>Abrir WhatsApp de nuevo</span>
             </a>
 
-            <button onclick="closeBookingModal()" class="w-full py-2.5 rounded-xl border border-gray-200 text-brand-textMuted hover:text-brand-navy hover:bg-gray-50 text-xs font-medium transition">
+            <button onclick="closeBookingModal()" class="w-full py-2 rounded-lg border border-gray-200 text-brand-textMuted hover:text-brand-navy hover:bg-gray-50 text-xs font-medium transition cursor-pointer">
               Cerrar esta ventana
             </button>
           </div>
