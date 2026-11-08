@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cindy Gisella Méndez Pinto | Psicóloga en Montería y Consulta Virtual</title>
+  <meta name="description" content="Psicóloga y Especialista en Talento Humano. Enfoque Cognitivo Conductual. Psicoterapia individual, familiar, crianza y consultoría organizacional en Montería y modalidad virtual.">
+  <meta name="keywords" content="Psicologa Monteria, Cindy Mendez, Terapia psicologica Monteria, psicoterapia virtual, psicologa cognitivo conductual, talento humano Monteria, crianza respetuosa">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cindy Gisella Méndez Pinto | Psicología & Bienestar">
+  <meta property="og:description" content="Tu bienestar emocional empieza aquí. Espacio profesional y seguro para sanar y avanzar. Enfoque Cognitivo Conductual.">
+  <meta property="og:locale" content="es_CO">
+  <meta name="theme-color" content="#1B365D">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231B365D'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#1B365D',      // Azul institucional sobrio
+              navyDark: '#122540',  // Azul profundo para hover/contrastes
+              navyLight: '#2A4D7E',
+              sage: '#EBF5F0',      // Verde salvia/menta suave
+              sageLight: '#F4FAF7',
+              sageBorder: '#C9E5D7',
+              gold: '#D9A74A',      // Dorado mostaza cálido
+              goldLight: '#FDF6E9',
+              goldHover: '#C49439',
+              cream: '#FAFAF7',     // Fondo cálido humanista
+              textMain: '#24303E',
+              textMuted: '#58677A',
+              nequi: '#E0006E',     // Identidad Nequi
+              nequiDark: '#200030'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(27, 54, 93, 0.06), 0 4px 10px -2px rgba(27, 54, 93, 0.03)',
+            'card': '0 18px 40px -10px rgba(27, 54, 93, 0.08)',
+            'float': '0 20px 35px -5px rgba(0, 0, 0, 0.15)',
+            'glow-gold': '0 0 25px rgba(217, 167, 74, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-cream text-brand-textMain font-sans antialiased selection:bg-brand-sageBorder selection:text-brand-navy">
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-brand-sageBorder/50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4 sm:py-4.5">
+        
+        <!-- Brand Logo / Name -->
+        <a href="#inicio" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-navy to-brand-navyLight flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-200">
+            <!-- Empathy Lotus/Mind Minimal Icon -->
+            <svg class="w-6 h-6 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 21a9 9 0 0 1-9-9c0-3.5 2-6 5-7 1.5 2 2.5 4.5 4 4.5s2.5-2.5 4-4.5c3 1 5 3.5 5 7a9 9 0 0 1-9 9z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 11v6" />
+            </svg>
+          </div>
+          <div>
+            <span class="block text-lg sm:text-xl font-bold font-serif tracking-tight text-brand-navy group-hover:text-brand-navyLight transition">
+              Cindy Gisella Méndez Pinto
+            </span>
+            <span class="block text-xs font-semibold text-brand-gold uppercase tracking-wider">
+              Psicología &bull; Talento Humano
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-brand-textMain">
+          <a href="#inicio" class="hover:text-brand-navy transition py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-brand-navy after:transition-all">Inicio</a>
+          <a href="#sobre-mi" class="hover:text-brand-navy transition py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-brand-navy after:transition-all">Sobre Mí</a>
+          <a href="#servicios" class="hover:text-brand-navy transition py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-brand-navy after:transition-all">Servicios</a>
+          <a href="#especialidades" class="hover:text-brand-navy transition py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-brand-navy after:transition-all">Especialidades</a>
+          <a href="#pagos" class="hover:text-brand-navy transition py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-brand-navy after:transition-all">Medios de Pago</a>
+          <a href="#contacto" class="hover:text-brand-navy transition py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-brand-navy after:transition-all">Contacto</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-xl bg-brand-navy text-white text-sm font-semibold hover:bg-brand-navyDark active:scale-95 transition-all shadow-md hover:shadow-lg flex items-center gap-2 group">
+            <i data-lucide="calendar-plus" class="w-4 h-4 text-brand-gold group-hover:scale-110 transition-transform"></i>
+            <span>Separar Cita</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" aria-label="Abrir menú" class="lg:hidden p-2 rounded-lg text-brand-navy hover:bg-brand-sage transition focus:outline-none focus:ring-2 focus:ring-brand-navy">
+          <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
+          <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-brand-sageBorder px-6 py-6 space-y-4 shadow-xl animate-fadeIn">
+      <a href="#inicio" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-brand-textMain hover:text-brand-navy">Inicio</a>
+      <a href="#sobre-mi" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-brand-textMain hover:text-brand-navy">Sobre Mí</a>
+      <a href="#servicios" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-brand-textMain hover:text-brand-navy">Servicios</a>
+      <a href="#especialidades" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-brand-textMain hover:text-brand-navy">Especialidades</a>
+      <a href="#pagos" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-brand-textMain hover:text-brand-navy">Medios de Pago</a>
+      <a href="#contacto" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-brand-textMain hover:text-brand-navy">Contacto</a>
+      
+      <div class="pt-4 border-t border-gray-100 flex flex-col gap-3">
+        <button onclick="closeMobileMenu(); openBookingModal();" class="w-full py-3 rounded-xl bg-brand-navy text-white text-center font-semibold flex items-center justify-center gap-2 shadow-md">
+          <i data-lucide="calendar-plus" class="w-4 h-4 text-brand-gold"></i>
+          <span>Separar Cita Ahora</span>
+        </button>
+        <a href="https://wa.me/573018015912" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl border border-brand-sageBorder text-brand-navy text-center text-sm font-medium flex items-center justify-center gap-2 bg-brand-sageLight">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+          <span>WhatsApp Directo: 301 801 5912</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="relative overflow-hidden pt-10 pb-16 lg:pt-14 lg:pb-24 bg-gradient-to-b from-brand-sage/40 via-brand-cream to-brand-cream">
+    
+    <!-- Background subtle ambient shapes -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-sage/60 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/2 -left-20 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content (Copy & CTA) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Confidence Badges -->
+          <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 bg-white/80 backdrop-blur-sm border border-brand-sageBorder px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-brand-navy shadow-sm">
+            <span class="flex items-center gap-1.5 text-brand-navy">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Enfoque Cognitivo Conductual
+            </span>
+            <span class="text-brand-textMuted/40">&bull;</span>
+            <span class="text-brand-textMuted">Atención Presencial y Virtual</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-brand-navy leading-tight tracking-tight">
+            Tu bienestar emocional <br class="hidden sm:inline">
+            <span class="relative inline-block">
+              <span class="relative z-10 text-brand-navy">empieza aquí.</span>
+              <span class="absolute bottom-1 left-0 w-full h-3 bg-brand-gold/25 -z-10 rounded-sm"></span>
+            </span>
+          </h1>
+
+          <!-- Empathetic Subtitle -->
+          <p class="text-lg sm:text-xl text-brand-textMuted font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            No tienes que poder con todo sola. Un espacio profesional, confidencial y seguro para sanar, recuperar tu calma interior y avanzar con claridad y firmeza.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <button onclick="openBookingModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-navy text-white font-semibold text-base shadow-card hover:bg-brand-navyDark active:scale-95 transition-all flex items-center justify-center gap-3 group">
+              <i data-lucide="calendar" class="w-5 h-5 text-brand-gold group-hover:scale-110 transition-transform"></i>
+              <span>Agendar Consulta Virtual o Presencial</span>
+            </button>
+            <a href="#servicios" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-white border border-brand-sageBorder text-brand-navy font-semibold text-base hover:bg-brand-sageLight active:scale-95 transition-all text-center flex items-center justify-center gap-2 shadow-sm">
+              <i data-lucide="layers" class="w-4 h-4 text-brand-textMuted"></i>
+              <span>Ver Servicios</span>
+            </a>
+          </div>
+
+          <!-- Social Proof & Direct Trust Points -->
+          <div class="pt-6 border-t border-brand-sageBorder/60 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-left">
+            <div class="space-y-1">
+              <div class="text-2xl font-bold font-serif text-brand-navy">100%</div>
+              <div class="text-xs text-brand-textMuted leading-snug">Confidencialidad & Ética Profesional</div>
+            </div>
+            <div class="space-y-1 border-l border-brand-sageBorder/80 pl-4">
+              <div class="text-2xl font-bold font-serif text-brand-navy">2 Vías</div>
+              <div class="text-xs text-brand-textMuted leading-snug">Presencial Montería o Virtual Nacional</div>
+            </div>
+            <div class="space-y-1 border-l border-brand-sageBorder/80 pl-4">
+              <div class="text-2xl font-bold font-serif text-brand-navy">TCC</div>
+              <div class="text-xs text-brand-textMuted leading-snug">Evidencia científica comprobada</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COLUMNA DERECHA DEL HERO: RETRATO CON GLASSMORPHISM Y ALTA CONVERSIÓN -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-[440px] h-[520px] rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/60 border border-slate-100 group">
+            
+            <!-- Imagen Principal con encuadre profesional -->
+            <img 
+              src="assets/cindy-mendez.jpg" 
+              alt="Dra. Cindy Gisella Méndez Pinto - Psicóloga" 
+              class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+            />
+
+            <!-- Degradado inferior para legibilidad del contenido superpuesto -->
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/15 to-transparent pointer-events-none"></div>
+
+            <!-- Badge Superior Flotante: Enfoque Humano y Calidez -->
+            <div class="absolute top-4 right-4 z-10">
+              <div class="bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 shadow-md border border-white/60 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"></path>
+                </svg>
+                <span>Psicóloga Titulada &bull; Enfoque Humano</span>
+              </div>
+            </div>
+
+            <!-- Tarjeta Inferior Flotante (Glassmorphism con CTA rápido) -->
+            <div class="absolute left-4 bottom-4 right-4 z-10">
+              <div class="bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/50 flex items-center justify-between gap-3 transition-all duration-300 hover:bg-white/95">
+                
+                <!-- Datos de disponibilidad -->
+                <div class="flex flex-col">
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base leading-tight">
+                    Dra. Cindy Gisella Méndez
+                  </h4>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-xs text-emerald-700 font-semibold tracking-tight">
+                      Disponible para agenda &bull; Montería y Online
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Botón de agendamiento rápido -->
+                <button 
+                  onclick="openBookingModal()" 
+                  class="shrink-0 bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-medium text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-md transition-all flex items-center gap-1.5 cursor-pointer"
+                >
+                  <svg class="w-3.5 h-3.5 text-brand-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.253M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                  </svg>
+                  <span>Agendar Cita</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STATS & ACCREDITATION BANNER -->
+  <section class="border-y border-brand-sageBorder/60 bg-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="space-y-1">
+          <p class="text-xs font-semibold uppercase tracking-wider text-brand-gold">Acreditación</p>
+          <p class="text-xl sm:text-2xl font-serif font-bold text-brand-navy">TP No. 112313</p>
+          <p class="text-xs text-brand-textMuted">Colpsic Ley 1090 de 2006</p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-xs font-semibold uppercase tracking-wider text-brand-gold">Modalidades</p>
+          <p class="text-xl sm:text-2xl font-serif font-bold text-brand-navy">Presencial & Virtual</p>
+          <p class="text-xs text-brand-textMuted">Montería y todo Colombia</p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-xs font-semibold uppercase tracking-wider text-brand-gold">Metodología</p>
+          <p class="text-xl sm:text-2xl font-serif font-bold text-brand-navy">Cognitivo Conductual</p>
+          <p class="text-xs text-brand-textMuted">Objetivos y metas terapéuticas</p>
+        </div>
+        <div class="space-y-1">
+          <p class="text-xs font-semibold uppercase tracking-wider text-brand-gold">Horario Flexible</p>
+          <p class="text-xl sm:text-2xl font-serif font-bold text-brand-navy">Lun a Sáb</p>
+          <p class="text-xs text-brand-textMuted">8:00 a.m. a 7:00 p.m.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ & ENFOQUE TERAPÉUTICO -->
+  <section id="sobre-mi" class="py-20 bg-brand-cream relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Portrait & Badge -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md">
+            
+            <!-- Real Portrait Photo Container -->
+            <div class="relative rounded-3xl overflow-hidden shadow-card border-2 border-brand-sageBorder bg-white group">
+              
+              <!-- Real Photo -->
+              <div class="relative aspect-[4/5] w-full overflow-hidden bg-brand-sage/30">
+                <img src="assets/cindy-mendez.jpg" alt="Dra. Cindy Gisella Méndez Pinto - Psicóloga y Especialista en Talento Humano" class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105">
+                
+                <!-- Elegant gradient fade at bottom to integrate overlay content -->
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/95 via-brand-navy/40 to-transparent"></div>
+                
+                <!-- Overlay Card with Profile Bio -->
+                <div class="absolute bottom-0 inset-x-0 p-6 text-white text-left space-y-2.5 z-10">
+                  <div class="inline-block px-3 py-1 rounded-full bg-brand-gold text-brand-navy text-xs font-bold uppercase tracking-wider shadow-sm">
+                    Perfil Profesional
+                  </div>
+                  <h3 class="text-2xl font-serif font-bold text-white leading-tight">Cindy Gisella Méndez Pinto</h3>
+                  <p class="text-xs text-white/90 leading-relaxed font-light">
+                    Psicóloga titulada con Tarjeta Profesional No. 112313 y Especialista en Gerencia del Talento Humano.
+                  </p>
+                  <div class="pt-1 flex items-center gap-2 text-xs text-brand-gold font-medium">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    <span>Atención Presencial en Montería & Consulta Virtual</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Floating pill -->
+            <div class="absolute -bottom-4 right-4 bg-brand-navy text-white px-5 py-2.5 rounded-full text-xs font-semibold shadow-lg flex items-center gap-2 z-20 border border-brand-gold/30">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i>
+              <span>Espacio Seguro & Sin Prejuicios</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Story & Philosophy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-sage text-brand-navy text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="user-check" class="w-3.5 h-3.5 text-brand-gold"></i>
+            <span>Compromiso y Vocación</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-snug">
+            Un puente entre la ciencia de la psicología y la empatía humana.
+          </h2>
+
+          <p class="text-base sm:text-lg text-brand-textMuted leading-relaxed font-light">
+            Entiendo que dar el primer paso para buscar ayuda psicológica requiere valentía. Por eso, mi consulta no es un lugar frío ni distante: es un refugio seguro donde serás escuchado con total respeto, sin juicios y con la confidencialidad que mereces.
+          </p>
+
+          <p class="text-sm sm:text-base text-brand-textMuted leading-relaxed">
+            Mediante el <strong class="text-brand-navy font-semibold">Enfoque Cognitivo Conductual</strong>, trabajamos de forma colaborativa: identificamos aquellos pensamientos automáticos y conductas que te generan malestar para reemplazarlos con herramientas prácticas aplicables a tu vida diaria.
+          </p>
+
+          <!-- Core Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <div class="p-4 rounded-2xl bg-white border border-brand-sageBorder/60 shadow-soft">
+              <div class="w-8 h-8 rounded-xl bg-brand-sage flex items-center justify-center text-brand-navy mb-3">
+                <i data-lucide="sparkles" class="w-4 h-4 text-brand-navy"></i>
+              </div>
+              <h4 class="font-bold text-brand-navy text-sm mb-1">Enfoque Cognitivo Conductual</h4>
+              <p class="text-xs text-brand-textMuted leading-relaxed">Estrategias estructuradas con metas claras, monitoreo continuo y resultados sostenibles en el tiempo.</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-brand-sageBorder/60 shadow-soft">
+              <div class="w-8 h-8 rounded-xl bg-brand-goldLight flex items-center justify-center text-brand-goldHover mb-3">
+                <i data-lucide="users" class="w-4 h-4 text-brand-goldHover"></i>
+              </div>
+              <h4 class="font-bold text-brand-navy text-sm mb-1">Gerencia del Talento Humano</h4>
+              <p class="text-xs text-brand-textMuted leading-relaxed">Visión integral del clima laboral, bienestar en el trabajo, selección estratégica y liderazgo asertivo.</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-brand-sageBorder/60 shadow-soft">
+              <div class="w-8 h-8 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-3">
+                <i data-lucide="shield" class="w-4 h-4"></i>
+              </div>
+              <h4 class="font-bold text-brand-navy text-sm mb-1">Ética y Confidencialidad</h4>
+              <p class="text-xs text-brand-textMuted leading-relaxed">Cumplimiento estricto del código deontológico de psicología en Colombia. Tu historia está protegida.</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-brand-sageBorder/60 shadow-soft">
+              <div class="w-8 h-8 rounded-xl bg-sky-50 flex items-center justify-center text-sky-700 mb-3">
+                <i data-lucide="video" class="w-4 h-4"></i>
+              </div>
+              <h4 class="font-bold text-brand-navy text-sm mb-1">Flexibilidad y Cercanía</h4>
+              <p class="text-xs text-brand-textMuted leading-relaxed">Sesiones en consultorio privado en Montería o sesiones online desde la comodidad de tu hogar.</p>
+            </div>
+
+          </div>
+
+          <!-- Bottom Quote CTA -->
+          <div class="pt-2">
+            <button onclick="openBookingModal()" class="inline-flex items-center gap-2 text-sm font-bold text-brand-navy hover:text-brand-gold transition group">
+              <span>Conversar sobre tu caso particular</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS PRINCIPALES -->
+  <section id="servicios" class="py-20 bg-white border-t border-brand-sageBorder/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-sage text-brand-navy text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="clipboard-list" class="w-3.5 h-3.5 text-brand-gold"></i>
+          <span>Portafolio de Servicios</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-brand-navy tracking-tight">
+          Acompañamiento especializado para cada etapa y necesidad
+        </h2>
+        <p class="text-base sm:text-lg text-brand-textMuted font-light">
+          Diseñados para brindar claridad, alivio y herramientas prácticas tanto a nivel personal y familiar, como en el ámbito organizacional.
+        </p>
+
+        <!-- Category Switcher Tabs -->
+        <div class="pt-6 flex justify-center">
+          <div class="inline-flex p-1.5 rounded-2xl bg-brand-cream border border-brand-sageBorder shadow-inner gap-1">
+            <button id="tabClinica" onclick="switchServiceTab('clinica')" class="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-brand-navy text-white shadow-sm flex items-center gap-2">
+              <i data-lucide="heart" class="w-4 h-4 text-brand-gold"></i>
+              <span>Clínica & Bienestar</span>
+            </button>
+            <button id="tabOrganizacional" onclick="switchServiceTab('organizacional')" class="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 text-brand-textMuted hover:text-brand-navy flex items-center gap-2">
+              <i data-lucide="building-2" class="w-4 h-4"></i>
+              <span>Organizacional & Vocacional</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 1: CLÍNICA & BIENESTAR -->
+      <div id="contentClinica" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Card 1: Psicoterapia Individual -->
+        <div class="bg-brand-cream/60 rounded-3xl p-7 border border-brand-sageBorder/80 hover:border-brand-navy/30 transition-all duration-300 hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-white text-brand-navy border border-brand-sageBorder flex items-center justify-center group-hover:scale-105 transition-transform shadow-xs">
+                <i data-lucide="user" class="w-6 h-6 text-brand-navy"></i>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-brand-sage text-brand-navy text-xs font-semibold">Presencial o Virtual</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-brand-navy mb-2 group-hover:text-brand-navyLight transition">
+              Psicoterapia Individual
+            </h3>
+            <p class="text-sm text-brand-textMuted leading-relaxed mb-4">
+              Espacio terapéutico enfocado en recuperar tu equilibrio, comprender tus detonantes emocionales y construir una relación compasiva y sólida contigo mismo.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-brand-textMain mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Manejo de ansiedad, estrés crónico y pensamientos intrusivos.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Fortalecimiento de la autoestima y seguridad personal.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Gestión asertiva de emociones y regulación afectiva.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Psicoterapia Individual')" class="w-full py-3 rounded-xl bg-white border border-brand-sageBorder text-brand-navy text-sm font-semibold hover:bg-brand-navy hover:text-white transition-all flex items-center justify-center gap-2 shadow-xs">
+            <span>Agendar esta Consulta</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Card 2: Duelo y Momentos Difíciles -->
+        <div class="bg-brand-cream/60 rounded-3xl p-7 border border-brand-sageBorder/80 hover:border-brand-navy/30 transition-all duration-300 hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-white text-brand-navy border border-brand-sageBorder flex items-center justify-center group-hover:scale-105 transition-transform shadow-xs">
+                <i data-lucide="feather" class="w-6 h-6 text-brand-goldHover"></i>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-brand-goldLight text-brand-goldHover text-xs font-semibold">Acompañamiento Profundo</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-brand-navy mb-2 group-hover:text-brand-navyLight transition">
+              Duelo, Crisis y Momentos Difíciles
+            </h3>
+            <p class="text-sm text-brand-textMuted leading-relaxed mb-4">
+              El dolor de una pérdida o una ruptura puede ser abrumador. Brindo contención profesional y herramientas para elaborar el duelo y reencontrar el sentido de vida.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-brand-textMain mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Pérdida de seres queridos o procesos de separación dolorosos.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Crisis vitales, cambios repentinos de vida y desorientación.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Técnicas de aceptación, resiliencia y reconstrucción.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Duelo, Crisis y Momentos Difíciles')" class="w-full py-3 rounded-xl bg-white border border-brand-sageBorder text-brand-navy text-sm font-semibold hover:bg-brand-navy hover:text-white transition-all flex items-center justify-center gap-2 shadow-xs">
+            <span>Agendar esta Consulta</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Card 3: Psicoterapia Familiar -->
+        <div class="bg-brand-cream/60 rounded-3xl p-7 border border-brand-sageBorder/80 hover:border-brand-navy/30 transition-all duration-300 hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-white text-brand-navy border border-brand-sageBorder flex items-center justify-center group-hover:scale-105 transition-transform shadow-xs">
+                <i data-lucide="users-2" class="w-6 h-6 text-brand-navy"></i>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-brand-sage text-brand-navy text-xs font-semibold">Vínculos & Comunicación</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-brand-navy mb-2 group-hover:text-brand-navyLight transition">
+              Psicoterapia Familiar y Orientación
+            </h3>
+            <p class="text-sm text-brand-textMuted leading-relaxed mb-4">
+              Restablece canales de comunicación dañados, resuelve desacuerdos recurrentes y genera dinámicas de convivencia saludables y respetuosas en el núcleo familiar.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-brand-textMain mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Desactivación de conflictos y patrones disfuncionales.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Mejora de la empatía y la escucha entre miembros de la familia.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Orientación psicológica para padres e hijos.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Psicoterapia Familiar y Orientación')" class="w-full py-3 rounded-xl bg-white border border-brand-sageBorder text-brand-navy text-sm font-semibold hover:bg-brand-navy hover:text-white transition-all flex items-center justify-center gap-2 shadow-xs">
+            <span>Agendar esta Consulta</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Card 4: Club de Mamás -->
+        <div class="bg-gradient-to-br from-brand-sage/40 to-white rounded-3xl p-7 border-2 border-brand-sageBorder hover:border-brand-gold transition-all duration-300 hover:shadow-card flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -right-8 -top-8 w-24 h-24 bg-brand-gold/15 rounded-full blur-xl pointer-events-none"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-white text-brand-navy border border-brand-sageBorder flex items-center justify-center group-hover:scale-105 transition-transform shadow-xs">
+                <i data-lucide="baby" class="w-6 h-6 text-brand-goldHover"></i>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-brand-gold text-white text-xs font-bold uppercase tracking-wider">Espacio Exclusivo</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-brand-navy mb-2 group-hover:text-brand-navyLight transition">
+              Club de Mamás
+            </h3>
+            <p class="text-sm text-brand-textMuted leading-relaxed mb-4">
+              Maternar no debería sentirse solitario ni abrumador. Un programa y comunidad de acompañamiento guiado con base científica para criar con amor firme y sin culpa.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-brand-textMain mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Crianza respetuosa y establecimiento de límites claros sin gritos.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Entendimiento y abordaje efectivo de rabietas infantiles.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Autocuidado materno, salud mental y prevención del burnout materno.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Club de Mamás')" class="w-full py-3 rounded-xl bg-brand-navy text-white text-sm font-semibold hover:bg-brand-navyDark transition-all flex items-center justify-center gap-2 shadow-md">
+            <i data-lucide="heart" class="w-4 h-4 text-brand-gold"></i>
+            <span>Unirme o Solicitar Asesoría</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- TAB 2: ORGANIZACIONAL & VOCACIONAL (HIDDEN INITIALLY) -->
+      <div id="contentOrganizacional" class="hidden grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Reclutamiento Pymes -->
+        <div class="bg-brand-cream/60 rounded-3xl p-7 border border-brand-sageBorder/80 hover:border-brand-navy/30 transition-all duration-300 hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white text-brand-navy border border-brand-sageBorder flex items-center justify-center group-hover:scale-105 transition-transform shadow-xs mb-4">
+              <i data-lucide="user-check" class="w-6 h-6 text-brand-navy"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-brand-navy mb-2">
+              Reclutamiento y Selección para Pymes
+            </h3>
+            <p class="text-sm text-brand-textMuted leading-relaxed mb-4">
+              Atrae el talento idóneo para tu empresa. Diseño de perfiles de cargo, entrevistas por competencias, aplicación de pruebas psicotécnicas y terna final garantizada.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-brand-textMain mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Levantamiento de perfil de cargo y requisitos.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Filtro curricular y entrevistas profundas.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Informe psicolaboral de candidatos finalistas.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Reclutamiento y Selección para Pymes')" class="w-full py-3 rounded-xl bg-white border border-brand-sageBorder text-brand-navy text-sm font-semibold hover:bg-brand-navy hover:text-white transition-all flex items-center justify-center gap-2">
+            <span>Cotizar Selección</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Card 2: Charlas y Capacitaciones -->
+        <div class="bg-brand-cream/60 rounded-3xl p-7 border border-brand-sageBorder/80 hover:border-brand-navy/30 transition-all duration-300 hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white text-brand-navy border border-brand-sageBorder flex items-center justify-center group-hover:scale-105 transition-transform shadow-xs mb-4">
+              <i data-lucide="presentation" class="w-6 h-6 text-brand-goldHover"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-brand-navy mb-2">
+              Charlas, Talleres y Capacitaciones
+            </h3>
+            <p class="text-sm text-brand-textMuted leading-relaxed mb-4">
+              Fortalece la cultura y productividad de tus equipos mediante formación práctica en salud mental en el trabajo y habilidades blandas directivas.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-brand-textMain mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Salud mental laboral y prevención del burnout.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Comunicación asertiva y resolución de conflictos.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Liderazgo empático y prevención de riesgos psicosociales.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Charlas, Talleres y Capacitaciones')" class="w-full py-3 rounded-xl bg-white border border-brand-sageBorder text-brand-navy text-sm font-semibold hover:bg-brand-navy hover:text-white transition-all flex items-center justify-center gap-2">
+            <span>Solicitar Propuesta</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Card 3: Exploración Vocacional -->
+        <div class="bg-brand-cream/60 rounded-3xl p-7 border border-brand-sageBorder/80 hover:border-brand-navy/30 transition-all duration-300 hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white text-brand-navy border border-brand-sageBorder flex items-center justify-center group-hover:scale-105 transition-transform shadow-xs mb-4">
+              <i data-lucide="compass" class="w-6 h-6 text-emerald-700"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-brand-navy mb-2">
+              Exploración Vocacional Integral
+            </h3>
+            <p class="text-sm text-brand-textMuted leading-relaxed mb-4">
+              Orientación dirigida a niños, adolescentes y jóvenes para identificar talentos, intereses profesionales y valores vocacionales antes de tomar decisiones académicas decisivas.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-brand-textMain mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Batería de pruebas vocacionales y de aptitudes.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Entrevistas reflexivas y mapeo de proyectos de vida.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Informe de orientación y devolución con los padres.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Exploración Vocacional para Niños y Jóvenes')" class="w-full py-3 rounded-xl bg-white border border-brand-sageBorder text-brand-navy text-sm font-semibold hover:bg-brand-navy hover:text-white transition-all flex items-center justify-center gap-2">
+            <span>Iniciar Orientación</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES Y METODOLOGÍA (POR QUÉ COGNITIVO CONDUCTUAL) -->
+  <section id="especialidades" class="py-20 bg-brand-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-brand-navy text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
+        
+        <!-- Ambient accents -->
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -top-20 w-80 h-80 bg-brand-navyLight rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-brand-gold text-xs font-bold uppercase tracking-wider border border-white/10">
+              <i data-lucide="microscope" class="w-3.5 h-3.5"></i>
+              <span>Rigor Científico y Humano</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold leading-tight">
+              ¿Por qué el Enfoque <br class="hidden sm:inline">
+              <span class="text-brand-gold">Cognitivo Conductual (TCC)?</span>
+            </h2>
+
+            <p class="text-white/80 text-base sm:text-lg leading-relaxed font-light">
+              La Terapia Cognitivo Conductual es el modelo psicológico con mayor evidencia científica en el mundo para el tratamiento de la ansiedad, la depresión, las fobias y los problemas de adaptación.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-xl bg-brand-gold/20 text-brand-gold flex items-center justify-center flex-shrink-0 mt-1 font-bold text-sm">
+                  1
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Basada en el presente y orientada a soluciones</h4>
+                  <p class="text-white/70 text-sm">Aunque valoramos tu historia, no nos quedamos atrapados en el pasado; nos enfocamos en qué ocurre hoy y cómo transformarlo.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-xl bg-brand-gold/20 text-brand-gold flex items-center justify-center flex-shrink-0 mt-1 font-bold text-sm">
+                  2
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Herramientas prácticas para llevar a casa</h4>
+                  <p class="text-white/70 text-sm">Te conviertes en el experto de tus propias emociones gracias a ejercicios, registros y técnicas que utilizas de por vida.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-xl bg-brand-gold/20 text-brand-gold flex items-center justify-center flex-shrink-0 mt-1 font-bold text-sm">
+                  3
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Medición del progreso</h4>
+                  <p class="text-white/70 text-sm">Establecemos objetivos claros desde las primeras sesiones para que sientas cómo disminuye el malestar de forma tangible.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Process steps box -->
+          <div class="lg:col-span-5 bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/15 space-y-5">
+            <h3 class="text-xl font-serif font-bold text-white flex items-center gap-2">
+              <i data-lucide="route" class="w-5 h-5 text-brand-gold"></i>
+              <span>¿Cómo es el proceso de atención?</span>
+            </h3>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex gap-3">
+                <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-navy flex items-center justify-center text-xs font-bold flex-shrink-0">✓</div>
+                <div>
+                  <strong class="text-white block font-medium">1. Contacto inicial y agendamiento</strong>
+                  <span class="text-white/70 text-xs">Separamos día, hora y modalidad (presencial en Montería o videollamada segura).</span>
+                </div>
+              </div>
+
+              <div class="flex gap-3">
+                <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-navy flex items-center justify-center text-xs font-bold flex-shrink-0">✓</div>
+                <div>
+                  <strong class="text-white block font-medium">2. Evaluación y comprensión del motivo</strong>
+                  <span class="text-white/70 text-xs">Conocemos a fondo tu situación actual, tus emociones y qué metas deseas lograr.</span>
+                </div>
+              </div>
+
+              <div class="flex gap-3">
+                <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-navy flex items-center justify-center text-xs font-bold flex-shrink-0">✓</div>
+                <div>
+                  <strong class="text-white block font-medium">3. Plan terapéutico personalizado</strong>
+                  <span class="text-white/70 text-xs">Diseñamos intervenciones a tu medida, a tu ritmo y con absoluta empatía.</span>
+                </div>
+              </div>
+
+              <div class="flex gap-3">
+                <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-navy flex items-center justify-center text-xs font-bold flex-shrink-0">✓</div>
+                <div>
+                  <strong class="text-white block font-medium">4. Consolidación y autonomía</strong>
+                  <span class="text-white/70 text-xs">Afianzamos los cambios para prevenir recaídas y darte el alta terapéutica.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/10">
+              <button onclick="openBookingModal()" class="w-full py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                <span>Comenzar Mi Proceso Hoy</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE PAGO Y HORARIOS -->
+  <section id="pagos" class="py-20 bg-white border-t border-brand-sageBorder/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-sage text-brand-navy text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="credit-card" class="w-3.5 h-3.5 text-brand-gold"></i>
+          <span>Facilidad y Transparencia</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-navy">
+          Medios de Pago y Horarios de Atención
+        </h2>
+        <p class="text-brand-textMuted text-base sm:text-lg font-light">
+          Reserva tu sesión de forma rápida y sencilla mediante transferencia móvil o en efectivo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Nequi Payment Card (Destacada) -->
+        <div class="lg:col-span-7 bg-gradient-to-br from-[#200030] to-[#12001e] text-white rounded-3xl p-8 sm:p-10 shadow-2xl relative overflow-hidden flex flex-col justify-between border border-pink-900/40">
+          
+          <!-- Subtle Glow -->
+          <div class="absolute -top-16 -right-16 w-52 h-52 bg-[#E0006E]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <div class="flex items-center justify-between mb-8">
+              <div class="flex items-center gap-3">
+                <!-- Nequi style badge -->
+                <div class="w-12 h-12 rounded-2xl bg-[#E0006E] flex items-center justify-center shadow-lg">
+                  <span class="font-black text-white text-xl tracking-tighter">N</span>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+                    <span>Nequi Colombia</span>
+                    <span class="text-xs px-2.5 py-0.5 rounded-full bg-[#E0006E]/30 text-pink-300 border border-pink-400/30">Oficial</span>
+                  </h3>
+                  <p class="text-xs text-white/70">Transferencia inmediata sin costo adicional</p>
+                </div>
+              </div>
+              <span class="hidden sm:inline-block text-xs font-mono bg-white/10 px-3 py-1 rounded-full text-white/80 border border-white/10">
+                Cuenta Oficial
+              </span>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-4">
+              <div class="text-xs uppercase tracking-wider text-white/60 font-semibold">Número de Cuenta Nequi</div>
+              <div class="flex items-center justify-between flex-wrap gap-4">
+                <span id="nequiNumberText" class="text-3xl sm:text-4xl font-mono font-bold tracking-wider text-pink-400">
+                  301 801 5912
+                </span>
+                <button onclick="copyNequiNumber()" id="copyNequiBtn" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 text-white text-xs font-semibold flex items-center gap-2 border border-white/20 transition-all">
+                  <i data-lucide="copy" class="w-4 h-4 text-pink-400"></i>
+                  <span id="copyBtnText">Copiar Número</span>
+                </button>
+              </div>
+              
+              <!-- Enlace claro para enviar soporte de pago por WhatsApp -->
+              <div class="pt-3 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div class="text-xs text-white/70 flex items-center gap-2">
+                  <i data-lucide="user" class="w-4 h-4 text-brand-gold"></i>
+                  <span>Titular: <strong>Cindy Gisella Méndez Pinto</strong></span>
+                </div>
+                <a href="https://wa.me/573018015912?text=Hola%20Dra.%20Cindy,%20aqu%C3%AD%20adjunto%20el%20comprobante%20de%20pago%20por%20Nequi%20para%20confirmar%20mi%20cita." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-emerald-600/90 hover:bg-emerald-600 text-white text-xs font-semibold shadow-md transition-all border border-emerald-400/40">
+                  <i data-lucide="receipt" class="w-3.5 h-3.5 text-emerald-200"></i>
+                  <span>Enviar comprobante por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-2">
+              <div class="flex items-center gap-2 text-sm text-pink-200">
+                <i data-lucide="info" class="w-4 h-4 text-[#E0006E]"></i>
+                <span class="font-semibold">Valor de consulta: A convenir según modalidad y servicio.</span>
+              </div>
+              <p class="text-xs text-white/60 leading-relaxed">
+                Una vez realizada tu transferencia, envía el comprobante de pago por WhatsApp para confirmar y bloquear tu turno en la agenda.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-8 flex flex-col sm:flex-row gap-3">
+            <button onclick="openBookingModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#E0006E] hover:bg-[#c70062] active:scale-95 text-white font-semibold text-sm transition-all shadow-lg flex items-center justify-center gap-2">
+              <i data-lucide="calendar-check" class="w-4 h-4"></i>
+              <span>Separar Cita y Notificar Pago</span>
+            </button>
+            <a href="https://wa.me/573018015912?text=Hola%20Dra.%20Cindy%2C%20quisiera%20consultar%20las%20tarifas%20de%20atenci%C3%B3n" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 active:scale-95 text-white text-center text-sm font-semibold transition-all border border-white/20 flex items-center justify-center gap-2">
+              <i data-lucide="help-circle" class="w-4 h-4 text-white/70"></i>
+              <span>Consultar Tarifas</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Schedule and Location Card -->
+        <div class="lg:col-span-5 bg-brand-cream/80 rounded-3xl p-8 sm:p-10 border border-brand-sageBorder flex flex-col justify-between shadow-soft">
+          
+          <div class="space-y-6">
+            <div>
+              <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-gold mb-2">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>Disponibilidad</span>
+              </div>
+              <h3 class="text-2xl font-serif font-bold text-brand-navy">Horarios de Atención</h3>
+              <p class="text-xs text-brand-textMuted mt-1">Atención previa reserva para garantizar puntualidad y privacidad.</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-white border border-brand-sageBorder/80">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-500"></div>
+                  <span class="text-sm font-semibold text-brand-navy">Lunes a Viernes</span>
+                </div>
+                <span class="text-xs font-mono font-medium text-brand-textMuted bg-brand-sage px-2.5 py-1 rounded-md">
+                  8:00 a.m. &ndash; 7:00 p.m.
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-white border border-brand-sageBorder/80">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-500"></div>
+                  <span class="text-sm font-semibold text-brand-navy">Sábados</span>
+                </div>
+                <span class="text-xs font-mono font-medium text-brand-textMuted bg-brand-sage px-2.5 py-1 rounded-md">
+                  8:00 a.m. &ndash; 7:00 p.m.
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-white/50 border border-dashed border-gray-300">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-2.5 h-2.5 rounded-full bg-gray-400"></div>
+                  <span class="text-sm font-medium text-brand-textMuted">Domingos y Festivos</span>
+                </div>
+                <span class="text-xs font-medium text-gray-500 italic">
+                  Concertación especial
+                </span>
+              </div>
+            </div>
+
+            <!-- Location Details -->
+            <div class="pt-4 border-t border-brand-sageBorder/80 space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-brand-sage text-brand-navy flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="map-pin" class="w-4 h-4 text-brand-navy"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-brand-navy">Consultorio en Montería</h4>
+                  <p class="text-xs text-brand-textMuted mt-0.5">Montería, Córdoba, Colombia. Dirección exacta suministrada al confirmar tu cita para asegurar tu privacidad.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-brand-goldLight text-brand-goldHover flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="laptop" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-brand-navy">Consulta Virtual Segura</h4>
+                  <p class="text-xs text-brand-textMuted mt-0.5">Plataforma privada de videollamada para pacientes dentro y fuera del país.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-6">
+            <a href="https://wa.me/573018015912" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brand-navy text-white text-center font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 hover:bg-brand-navyDark transition">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>Consultar Disponibilidad de Hoy</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES (FAQ) -->
+  <section class="py-16 bg-brand-cream border-t border-brand-sageBorder/60">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-3 mb-10">
+        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-brand-navy">Preguntas Frecuentes</h3>
+        <p class="text-brand-textMuted text-sm">Respuestas claras para que des tu primer paso con tranquilidad.</p>
+      </div>
+
+      <div class="space-y-3" id="faqAccordion">
+        
+        <!-- Item 1 -->
+        <div class="bg-white rounded-2xl border border-brand-sageBorder overflow-hidden transition-all duration-200">
+          <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left font-semibold text-brand-navy flex items-center justify-between gap-4 focus:outline-none">
+            <span class="text-sm sm:text-base">¿Cómo funciona la primera consulta de psicología?</span>
+            <i data-lucide="chevron-down" id="faqIcon-1" class="w-4 h-4 text-brand-gold transition-transform duration-200"></i>
+          </button>
+          <div id="faqContent-1" class="hidden px-6 pb-4 text-xs sm:text-sm text-brand-textMuted leading-relaxed border-t border-gray-100 pt-3">
+            La primera sesión es una entrevista inicial de valoración y empatía. En ella conversamos sobre el motivo que te trae a consulta, cómo te has sentido últimamente y qué metas esperas alcanzar. Establecemos un espacio seguro donde te sientas escuchado y definimos juntos la ruta de acompañamiento.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white rounded-2xl border border-brand-sageBorder overflow-hidden transition-all duration-200">
+          <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left font-semibold text-brand-navy flex items-center justify-between gap-4 focus:outline-none">
+            <span class="text-sm sm:text-base">¿La terapia virtual es igual de efectiva que la presencial?</span>
+            <i data-lucide="chevron-down" id="faqIcon-2" class="w-4 h-4 text-brand-gold transition-transform duration-200"></i>
+          </button>
+          <div id="faqContent-2" class="hidden px-6 pb-4 text-xs sm:text-sm text-brand-textMuted leading-relaxed border-t border-gray-100 pt-3">
+            Sí. Múltiples investigaciones avalan que la terapia virtual bajo el Enfoque Cognitivo Conductual tiene el mismo nivel de efectividad clínica que las sesiones presenciales, brindando además la ventaja de acceder al servicio sin desplazamientos y desde la comodidad de tu hogar.
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white rounded-2xl border border-brand-sageBorder overflow-hidden transition-all duration-200">
+          <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left font-semibold text-brand-navy flex items-center justify-between gap-4 focus:outline-none">
+            <span class="text-sm sm:text-base">¿Qué métodos de pago se aceptan y cómo confirmo mi cita?</span>
+            <i data-lucide="chevron-down" id="faqIcon-3" class="w-4 h-4 text-brand-gold transition-transform duration-200"></i>
+          </button>
+          <div id="faqContent-3" class="hidden px-6 pb-4 text-xs sm:text-sm text-brand-textMuted leading-relaxed border-t border-gray-100 pt-3">
+            Aceptamos transferencias por Nequi al número <strong>301 801 5912</strong> y efectivo para sesiones presenciales. Para apartar y garantizar tu turno en la agenda, solicitamos la confirmación previa enviando el comprobante por WhatsApp.
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-white rounded-2xl border border-brand-sageBorder overflow-hidden transition-all duration-200">
+          <button onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left font-semibold text-brand-navy flex items-center justify-between gap-4 focus:outline-none">
+            <span class="text-sm sm:text-base">¿Qué servicios ofreces para empresas y pymes?</span>
+            <i data-lucide="chevron-down" id="faqIcon-4" class="w-4 h-4 text-brand-gold transition-transform duration-200"></i>
+          </button>
+          <div id="faqContent-4" class="hidden px-6 pb-4 text-xs sm:text-sm text-brand-textMuted leading-relaxed border-t border-gray-100 pt-3">
+            Como Especialista en Gerencia del Talento Humano, asesoro a micro, pequeñas y medianas empresas en procesos completos de reclutamiento y selección de personal idóneo, pruebas psicotécnicas, así como talleres de salud mental laboral, clima organizacional y comunicación asertiva.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO DIRECTO -->
+  <section id="contacto" class="py-20 bg-white border-t border-brand-sageBorder/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-brand-sage/40 via-brand-cream to-white rounded-3xl p-8 sm:p-12 border border-brand-sageBorder">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-navy text-white text-xs font-semibold">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-brand-gold"></i>
+              <span>Canales Abiertos</span>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-navy">
+              ¿Tienes dudas o deseas atención personalizada?
+            </h2>
+
+            <p class="text-brand-textMuted text-base leading-relaxed">
+              Escríbeme o llámame con total confianza. Responderé a tus inquietudes a la mayor brevedad posible para orientarte sobre la mejor alternativa para ti o tu familia.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              
+              <a href="https://wa.me/573018015912" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-white border border-brand-sageBorder hover:border-emerald-500 transition-all flex items-center gap-3.5 group shadow-xs">
+                <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                  <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-semibold text-brand-textMuted">WhatsApp / Teléfono</div>
+                  <div class="text-sm font-bold text-brand-navy group-hover:text-emerald-700 transition">301 801 5912</div>
+                </div>
+              </a>
+
+              <a href="mailto:cindygisemp@gmail.com" class="p-4 rounded-2xl bg-white border border-brand-sageBorder hover:border-brand-navy transition-all flex items-center gap-3.5 group shadow-xs">
+                <div class="w-11 h-11 rounded-xl bg-brand-navy/10 text-brand-navy flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div class="truncate">
+                  <div class="text-xs font-semibold text-brand-textMuted">Correo Electrónico</div>
+                  <div class="text-sm font-bold text-brand-navy truncate">cindygisemp@gmail.com</div>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="text-xs text-brand-textMuted flex items-center gap-2 pt-2">
+              <i data-lucide="mail-check" class="w-4 h-4 text-brand-gold"></i>
+              <span>Correo alterno: <strong>cindygisemp@hotmail.com</strong></span>
+            </div>
+
+          </div>
+
+          <div class="lg:col-span-5 text-center lg:text-right">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-brand-sageBorder shadow-card space-y-4 text-center">
+              <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-navy text-brand-gold flex items-center justify-center shadow-md">
+                <i data-lucide="calendar" class="w-7 h-7"></i>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-brand-navy">Reserva en Línea</h3>
+              <p class="text-xs text-brand-textMuted leading-relaxed">
+                Selecciona tu servicio y modalidad para ser atendido sin filas ni esperas.
+              </p>
+              <button onclick="openBookingModal()" class="w-full py-3.5 rounded-xl bg-brand-navy text-white text-sm font-bold hover:bg-brand-navyDark active:scale-95 transition-all shadow-md flex items-center justify-center gap-2">
+                <i data-lucide="calendar-plus" class="w-4 h-4 text-brand-gold"></i>
+                <span>Abrir Formulario de Cita</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navy text-white/80 pt-16 pb-28 sm:pb-14 border-t border-brand-navyDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Bio -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-navyLight border border-brand-gold/30 flex items-center justify-center text-brand-gold">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 21a9 9 0 0 1-9-9c0-3.5 2-6 5-7 1.5 2 2.5 4.5 4 4.5s2.5-2.5 4-4.5c3 1 5 3.5 5 7a9 9 0 0 1-9 9z" />
+              </svg>
+            </div>
+            <div>
+              <span class="block text-lg font-serif font-bold text-white">Cindy Gisella Méndez Pinto</span>
+              <span class="block text-xs text-brand-gold uppercase tracking-wider font-semibold">Psicóloga &bull; TP No. 112313</span>
+            </div>
+          </div>
+
+          <p class="text-xs sm:text-sm text-white/70 leading-relaxed max-w-sm">
+            Especialista en Gerencia del Talento Humano. Psicoterapia Cognitivo Conductual individual y familiar en Montería, Córdoba y modalidad virtual en Colombia.
+          </p>
+
+          <div class="pt-1 flex items-center gap-3 text-xs text-brand-gold">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span>Colegio Colombiano de Psicólogos &bull; Ley 1090 de 2006</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Enlaces Rápidos -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Enlaces Rápidos</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#inicio" class="hover:text-brand-gold transition">Inicio</a></li>
+            <li><a href="#sobre-mi" class="hover:text-brand-gold transition">Sobre la Profesional</a></li>
+            <li><a href="#servicios" class="hover:text-brand-gold transition">Servicios Clínicos y Organizacionales</a></li>
+            <li><a href="#especialidades" class="hover:text-brand-gold transition">Enfoque Cognitivo Conductual</a></li>
+            <li><a href="#pagos" class="hover:text-brand-gold transition">Nequi y Medios de Pago</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Datos de Contacto y Horarios -->
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Atención y Citas</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-gold"></i>
+              <a href="https://wa.me/573018015912" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">WhatsApp: (+57) 301 801 5912</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-gold"></i>
+              <a href="mailto:cindygisemp@gmail.com" class="hover:text-white transition">cindygisemp@gmail.com</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-gold"></i>
+              <a href="mailto:cindygisemp@hotmail.com" class="hover:text-white transition">cindygisemp@hotmail.com</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-gold"></i>
+              <span>Lun a Sáb: 8:00 a.m. &ndash; 7:00 p.m.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-gold"></i>
+              <span>Montería, Córdoba, Colombia</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Legal -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+        <div>
+          &copy; <span id="currentYear"></span> Cindy Gisella Méndez Pinto. Todos los derechos reservados.
+        </div>
+        <div class="flex items-center gap-4 text-white/60">
+          <span>Ética Médica & Confidencialidad</span>
+          <span>&bull;</span>
+          <span>Protección de Datos Personales</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (CON TOOLTIP) -->
+  <div class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 flex items-center group">
+    <!-- Tooltip -->
+    <a href="https://wa.me/573018015912?text=Hola%20Dra.%20Cindy%20M%C3%A9ndez%2C%20quisiera%20recibir%20informaci%C3%B3n%20para%20una%20consulta" target="_blank" rel="noopener noreferrer" class="mr-3 hidden md:flex items-center gap-2 bg-white text-brand-navy text-xs font-bold py-2 px-3.5 rounded-full shadow-float border border-brand-sageBorder group-hover:scale-105 transition-all">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+      <span>Agenda tu consulta</span>
+    </a>
+    
+    <!-- WhatsApp Circle Button -->
+    <a href="https://wa.me/573018015912?text=Hola%20Dra.%20Cindy%20M%C3%A9ndez%2C%20quisiera%20recibir%20informaci%C3%B3n%20para%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Cindy Méndez" class="w-14 h-14 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white rounded-full flex items-center justify-center shadow-float hover:shadow-xl transition-all duration-300 relative group-hover:rotate-6">
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+      <span class="absolute -top-1 -right-1 w-4 h-4 bg-brand-gold rounded-full border-2 border-white"></span>
+    </a>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-brand-navy text-white px-5 py-3 rounded-2xl shadow-float text-xs sm:text-sm font-medium flex items-center gap-2.5 opacity-0 pointer-events-none transition-all duration-300 border border-brand-gold/30">
+    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toastMessage">Texto copiado al portapapeles</span>
+  </div>
+
+  <!-- MODAL INTERACTIVO DE AGENDAMIENTO (#modal-agendamiento) -->
+  <div id="modal-agendamiento" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-brand-navy/60 backdrop-blur-sm overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    
+    <!-- Modal Dialog Box -->
+    <div id="modalBox" class="bg-white w-full max-w-lg rounded-3xl shadow-2xl border border-brand-sageBorder overflow-hidden transform scale-95 opacity-0 transition-all duration-300 my-8">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-brand-navy to-brand-navyLight px-6 sm:px-8 py-5 text-white flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-gold">
+            <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 id="modalTitle" class="text-lg font-serif font-bold text-white">Separar Cita de Consulta</h3>
+            <p class="text-xs text-white/70">Tu bienestar emocional es una prioridad &bull; Espacio seguro y confidencial</p>
+          </div>
+        </div>
+        <button onclick="closeBookingModal()" aria-label="Cerrar modal" class="p-2 rounded-xl text-white/70 hover:text-white hover:bg-white/10 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body (Form & Success Views) -->
+      <div class="p-6 sm:p-8 space-y-5">
+        
+        <!-- Form Container -->
+        <div id="modalFormContainer" class="space-y-4">
+          <!-- Info Banner inside modal -->
+          <div class="p-3.5 rounded-2xl bg-brand-sage/50 border border-brand-sageBorder flex items-start gap-3 text-xs text-brand-navy">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+            <div>
+              <strong>Atención personalizada:</strong> Al enviar tu solicitud se generará un código único de seguimiento y te derivaremos a WhatsApp oficial para coordinar fecha y hora.
+            </div>
+          </div>
+
+          <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4" novalidate>
+            
+            <!-- Campo 1: Nombre completo -->
+            <div>
+              <label for="fullName" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
+                Nombre Completo <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-brand-textMuted">
+                  <i data-lucide="user" class="w-4 h-4"></i>
+                </div>
+                <input type="text" id="fullName" name="fullName" required placeholder="Ej. Mariana López Gómez" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition">
+              </div>
+              <p id="nameError" class="hidden text-xs text-rose-500 mt-1">Por favor escribe tu nombre completo (mínimo 3 caracteres).</p>
+            </div>
+
+            <!-- Campo 2: Teléfono / WhatsApp -->
+            <div>
+              <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
+                Teléfono / WhatsApp <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-brand-textMuted">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <input type="tel" id="phone" name="phone" required placeholder="Ej. 301 234 5678" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition">
+              </div>
+              <p id="phoneError" class="hidden text-xs text-rose-500 mt-1">Ingresa un número telefónico válido (10 dígitos en Colombia).</p>
+            </div>
+
+            <!-- Campo 3: Servicio de Interés -->
+            <div>
+              <label for="serviceSelect" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
+                Servicio de Interés <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <select id="serviceSelect" name="serviceSelect" required class="w-full pl-3.5 pr-10 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-navy focus:border-brand-navy outline-none transition bg-white appearance-none">
+                  <option value="" disabled selected>Selecciona una opción...</option>
+                  <option value="Psicoterapia Individual">Psicoterapia Individual</option>
+                  <option value="Psicoterapia Familiar">Psicoterapia Familiar</option>
+                  <option value="Club de Mamás">Club de Mamás</option>
+                  <option value="Reclutamiento para Pymes">Reclutamiento para Pymes</option>
+                  <option value="Charlas y Capacitaciones">Charlas y Capacitaciones</option>
+                  <option value="Exploración Vocacional">Exploración Vocacional</option>
+                  <option value="Orientación Psicológica">Orientación Psicológica</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-brand-textMuted">
+                  <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </div>
+              </div>
+              <p id="serviceError" class="hidden text-xs text-rose-500 mt-1">Por favor selecciona un servicio de interés.</p>
+            </div>
+
+            <!-- Campo 4: Modalidad Preferida -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
+                Modalidad Preferida <span class="text-rose-500">*</span>
+              </label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 cursor-pointer hover:bg-brand-sage/30 transition has-[:checked]:border-brand-navy has-[:checked]:bg-brand-sage/50">
+                  <input type="radio" name="modalidad" value="Presencial en Montería" checked class="text-brand-navy focus:ring-brand-navy">
+                  <div class="text-xs">
+                    <span class="font-bold text-brand-navy block">Presencial</span>
+                    <span class="text-brand-textMuted text-[11px]">Montería, Córdoba</span>
+                  </div>
+                </label>
+
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 cursor-pointer hover:bg-brand-sage/30 transition has-[:checked]:border-brand-navy has-[:checked]:bg-brand-sage/50">
+                  <input type="radio" name="modalidad" value="Virtual Nacional" class="text-brand-navy focus:ring-brand-navy">
+                  <div class="text-xs">
+                    <span class="font-bold text-brand-navy block">Virtual</span>
+                    <span class="text-brand-textMuted text-[11px]">Videollamada Nacional</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Campo 5 (Legal): Consentimiento de Datos Ley 1581 -->
+            <div class="pt-1">
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" id="legalConsent" name="legalConsent" required class="mt-1 w-4 h-4 text-brand-navy rounded border-gray-300 focus:ring-brand-navy">
+                <span class="text-xs text-brand-textMuted leading-relaxed select-none">
+                  Acepto el tratamiento de mis datos personales de acuerdo con la <strong class="text-brand-navy font-semibold">Ley 1581 de 2012</strong> exclusivamente para la gestión de esta consulta. <span class="text-rose-500">*</span>
+                </span>
+              </label>
+              <p id="consentError" class="hidden text-xs text-rose-500 mt-1">Debes aceptar el tratamiento de datos para continuar.</p>
+            </div>
+
+            <!-- Submit Button con Spinner -->
+            <div class="pt-2">
+              <button type="submit" id="submitBookingBtn" class="w-full py-4 rounded-xl bg-brand-navy hover:bg-brand-navyDark active:scale-95 text-white font-bold text-sm shadow-card flex items-center justify-center gap-2 transition-all disabled:opacity-75 disabled:cursor-not-allowed">
+                <svg id="btnSpinner" class="hidden animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span id="btnText">Confirmar y Continuar a WhatsApp</span>
+                <i data-lucide="send" id="btnIcon" class="w-4 h-4 text-brand-gold"></i>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Success Container inside Modal (shown after booking) -->
+        <div id="modalSuccessContainer" class="hidden text-center space-y-5 py-2">
+          <!-- Icono verde de confirmación -->
+          <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-md">
+            <i data-lucide="check-circle" class="w-9 h-9"></i>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-2xl font-serif font-bold text-brand-navy">¡Solicitud registrada con éxito!</h3>
+            <p class="text-sm text-brand-navy font-semibold">
+              Tu código es: <span id="successRefCode" class="font-mono bg-brand-goldLight text-brand-navy px-2.5 py-1 rounded-lg border border-brand-gold/40">REF-PSI-000000-000</span>
+            </p>
+            <p class="text-xs text-brand-textMuted leading-relaxed max-w-md mx-auto pt-1">
+              Para asegurar tu espacio en la agenda, puedes transferir a la cuenta Nequi <strong class="text-brand-navy">301 801 5912</strong> y adjuntar tu comprobante por el chat de WhatsApp que acabamos de abrir.
+            </p>
+          </div>
+
+          <!-- Actions & Backup Link -->
+          <div class="space-y-3 pt-3 max-w-md mx-auto">
+            <button onclick="copyNequiNumber()" class="w-full py-3 rounded-xl bg-brand-goldLight border border-brand-gold text-brand-navy text-xs font-bold hover:bg-brand-gold hover:text-white transition-all flex items-center justify-center gap-2 shadow-xs">
+              <i data-lucide="copy" class="w-4 h-4 text-brand-goldHover"></i>
+              <span>Copiar número Nequi (301 801 5912)</span>
+            </button>
+            
+            <a id="successWhatsAppLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs sm:text-sm font-bold shadow-md transition-all flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Si WhatsApp no abrió automáticamente, haz clic aquí para enviar el mensaje.</span>
+            </a>
+
+            <button onclick="closeBookingModal()" class="w-full py-2.5 rounded-xl border border-gray-200 text-brand-textMuted hover:text-brand-navy hover:bg-gray-50 text-xs font-medium transition">
+              Cerrar esta ventana
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
